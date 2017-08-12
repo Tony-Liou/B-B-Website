@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+/*
+<section id="intro" class="main">
+	<div class="spotlight">
+		<div class="content">
+			<header class="major">
+				<h2>重要資訊</h2>
+			</header>
+			<ul>
+				<li>租金</li>
+				<li>地點</li>
+				<li>規格</li>
+			</ul>
+			<p>租金</p>
+			<ul class="actions">
+				<li><a href="generic.html" class="button">查看更多照片</a></li>
+			</ul>
+		</div>
+		<span class="image"><img src="images/pic01.jpg" alt="" /></span>
+	</div>
+</section>
+*/
+
+#price {
+	color: orangered !important;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 480px) {
+
+	ul li {
+	padding: 1em 0 0 0;
+	display: block;
+	text-align: center;
+	width: 100%;
+		list-style: none;
+}
+ul li:first-child {
+	padding-top: 0;
+}
+ul li > * {
+	width: 100%;
+	margin: 0 !important;
+}
+ul.actions.small li {
+	padding: 0.5em 0 0 0;
+}
+.spotlight ul {
+	display: block;
+	list-style: none;
+}
+.spotlight ul li {
+	padding: 1em 0 0 0;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+
+}
+.features li:child {
+				margin-top: 0;
+			}
