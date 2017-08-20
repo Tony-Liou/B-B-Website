@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+/*
+-webkit- (Chrome, Safari, newer versions of Opera, almost all iOS browsers (including Firefox for iOS); basically, any WebKit based browser)
+-moz- (Firefox)
+-o- (Old, pre-WebKit, versions of Opera)
+-ms- (Internet Explorer and Microsoft Edge)
+
+-webkit-
+-moz-
+-o-
+-ms-
+*/
+
+.features li:child {
+				margin-top: 0;
+			}
+/* Google Map */
+
+.iframe-rwd {
+    position: relative;
+    padding-bottom: 50%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+.iframe-rwd iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Copyright information */
+
+#crBtn
+{
+	width: 40%;
+	margin-left: calc((100% - 40%) / 2);
+}
+
+.copyright
+{
+	display: none;
+}
