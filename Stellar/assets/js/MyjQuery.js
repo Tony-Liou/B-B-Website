@@ -15,3 +15,8 @@ $('#crBtn').on('click', function(){
 	}
 	$class.toggle('slow');
 });
+
+function replaceImg()
+{
+	this.src = "https://i.creativecommons.org/l/by/4.0/88x31.png";
+}

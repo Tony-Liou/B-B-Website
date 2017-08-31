@@ -52,6 +52,11 @@
 	display: none;
 }
 
+#ccImg
+{
+	width: 88px;
+	height: 31px;
+}
 
 /*
 @media screen and (max-width: 480px) {

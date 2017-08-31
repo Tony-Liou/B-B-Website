@@ -21,6 +21,24 @@
 		
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		
+		
+		<!-- PhotoSwipe -->
+		<!-- Core CSS file -->
+		<link rel="stylesheet" href="assets/dist/photoswipe.css"> 
+
+		<!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+			In the folder of skin CSS file there are also:
+			- .png and .svg icons sprite, 
+			- preloader.gif (for browsers that do not support CSS animations) -->
+		<link rel="stylesheet" href="assets/dist/default-skin/default-skin.css"> 
+
+		<!-- Core JS file -->
+		<script src="assets/dist/photoswipe.min.js"></script> 
+
+		<!-- UI JS file -->
+		<script src="assets/dist/photoswipe-ui-default.min.js"></script> 
+		
 	</head>
 	<body>
 
@@ -169,7 +187,61 @@
 							</section>
 
 					</div>
+					
+					<button id="psBtn">Open PhotoSwipe</button>
 
+						<!-- Root element of PhotoSwipe. Must have class pswp. -->
+						<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true"> 
+							
+							<!-- Background of PhotoSwipe. 
+												         It's a separate element, as animating opacity is faster than rgba(). -->
+							<div class="pswp__bg"></div>
+							
+							<!-- Slides wrapper with overflow:hidden. -->
+							<div class="pswp__scroll-wrap"> 
+								
+								<!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+								<div class="pswp__container"> 
+									<!-- don't modify these 3 pswp__item elements, data is added later on -->
+									<div class="pswp__item"></div>
+									<div class="pswp__item"></div>
+									<div class="pswp__item"></div>
+								</div>
+								
+								<!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+								<div class="pswp__ui pswp__ui--hidden">
+									<div class="pswp__top-bar"> 
+										
+										<!--  Controls are self-explanatory. Order can be changed. -->
+										
+										<div class="pswp__counter"></div>
+										<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+										<button class="pswp__button pswp__button--share" title="Share"></button>
+										<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+										<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+										
+										<!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR --> 
+										<!-- element will get class pswp__preloader--active when preloader is running -->
+										<div class="pswp__preloader">
+											<div class="pswp__preloader__icn">
+												<div class="pswp__preloader__cut">
+													<div class="pswp__preloader__donut"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+										<div class="pswp__share-tooltip"></div>
+									</div>
+									<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"> </button>
+									<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"> </button>
+									<div class="pswp__caption">
+										<div class="pswp__caption__center"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					
 				<!-- Footer -->
 					<footer id="footer">
 						<section>
@@ -179,6 +251,7 @@
 								<li><a href="generic.html" class="button">Learn More</a></li>
 							</ul>
 						</section>
+												
 						<section>
 							<h2>管理人</h2>
 							<dl class="alt">
@@ -200,9 +273,11 @@
 							</ul>
 						</section>
 						
+						
+					
 						<button type="button" id="crBtn" title="Copy Right">Open</button>
 						<p class="copyright">
-							<a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.zh_TW"><img alt="創用 CC 授權條款" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">租屋網站</span>由<a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/Tony-Liou" property="cc:attributionName" rel="cc:attributionURL">Tony</a>製作，以<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">創用CC 姓名標示 4.0 國際 授權條款</a>釋出。<br />此作品衍生自<a xmlns:dct="http://purl.org/dc/terms/" href="https://html5up.net/" rel="dct:source">HTML5 UP</a>。<br />超出此條款範圍外的授權可於<a xmlns:cc="http://creativecommons.org/ns#" href="https://html5up.net/license" rel="cc:morePermissions">https://html5up.net/license</a>查閱。
+							<a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.zh_TW"><img id="ccImg" alt="創用 CC 授權條款" src="images/Creative Commons.svg" onerror="replaceImg()" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">租屋網站</span>由<a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/Tony-Liou" property="cc:attributionName" rel="cc:attributionURL">Tony</a>製作，以<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">創用CC 姓名標示 4.0 國際 授權條款</a>釋出。<br />此作品衍生自<a xmlns:dct="http://purl.org/dc/terms/" href="https://html5up.net/" rel="dct:source">HTML5 UP</a>。<br />超出此條款範圍外的授權可於<a xmlns:cc="http://creativecommons.org/ns#" href="https://html5up.net/license" rel="cc:morePermissions">https://html5up.net/license</a>查閱。
 						</p>
 					</footer>
 
@@ -222,5 +297,44 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/MyjQuery.js"></script>
+			
+			<script type="text/javascript">
+				var openPhotoSwipe = function() {
+					var pswpElement = document.querySelectorAll('.pswp')[0];
+					
+					// build items array
+					var items = [
+						{
+							src: 'https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg',
+							w: 964,
+							h: 1024
+						},
+						{
+							src: 'https://farm7.staticflickr.com/6175/6176698785_7dee72237e_b.jpg',
+							w: 1024,
+							h: 683
+						}
+					];
+					
+					// define options (if needed)
+					var options = {
+						// history & focus options are disabled on CodePen        
+						history: false,
+						focus: false,
+						
+						showAnimationDuration: 0,
+						hideAnimationDuration: 0
+						
+					};
+					
+					var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+					gallery.init();
+				};
+				
+				openPhotoSwipe();
+				
+				document.getElementById('psBtn').onclick = openPhotoSwipe;
+			</script>
+			
 	</body>
 </html>
