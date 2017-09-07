@@ -16,15 +16,13 @@
 
 /* main */
 
-/* 租金 */
-#price {
-	color: orangered !important;
-	font-weight: bold;
-}
-
 .features li:child {
 	margin-top: 0;
 }
+/*
+.features li:nth-child(1){
+	margin-top: 0;
+}*/
 
 /* Google Map */
 
@@ -51,14 +49,11 @@
 	height: 31px;
 }
 
-.copyright > a[rel=license]
-{
-	border-bottom: none;
-}
-
 /* Photo Swipe */
 
-/* Below attributes (in default-skin.css) will be overwrite by main.css, so need the "!important" to keep it performing correctly */
+/* Below attributes (in default-skin.css) will be overwrite by main.css
+ * , so need the "!important" to keep it performing correctly
+ */
 .pswp__button--arrow--left,
 .pswp__button--arrow--right,
 .pswp__button--close,
