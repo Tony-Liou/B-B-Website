@@ -1,0 +1,9 @@
+Photo Swipe 可刪減部分
+
+First things that you should know before you start:
+
+All code in the documentation is pure Vanilla JS and supports IE 8 and above.
+If your website or app uses some JavaScript framework (like jQuery or MooTools) or you don't need to support old browsers – feel free to simplify the code.
+
+Avoid serving big images (larger than 2000x1500px) for mobile, as they will dramatically reduce animation performance and can cause crash (especially on iOS Safari).
+Possible solutions: serve responsive images, or open image on a separate page, or use libraries that support image tiling.
