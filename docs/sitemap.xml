@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>https://tony-liou.github.io/B-B-Website/</loc>
+	</url>
+	<url>
+		<loc>https://tony-liou.github.io/B-B-Website/Photo.html</loc>
+		<image:image>
+			<image:loc>https://tony-liou.github.io/B-B-Website/Photo.html#&gid=1&pid=1</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://tony-liou.github.io/B-B-Website/Photo.html#&gid=1&pid=2</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://tony-liou.github.io/B-B-Website/Photo.html#&gid=1&pid=3</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://tony-liou.github.io/B-B-Website/Photo.html#&gid=2&pid=1</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://tony-liou.github.io/B-B-Website/Photo.html#&gid=2&pid=2</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://tony-liou.github.io/B-B-Website/Photo.html#&gid=2&pid=3</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://tony-liou.github.io/B-B-Website/Photo.html#&gid=3&pid=1</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://tony-liou.github.io/B-B-Website/Photo.html#&gid=3&pid=2</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://tony-liou.github.io/B-B-Website/Photo.html#&gid=3&pid=3</image:loc>
+		</image:image>
+	</url>
+</urlset>
