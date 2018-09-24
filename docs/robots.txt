@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /generic.html$
+Disallow: /elements.html$
+
+Sitemap: https://tony-liou.github.io/B-B-Website/sitemap.xml
